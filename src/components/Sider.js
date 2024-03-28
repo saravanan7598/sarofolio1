@@ -27,11 +27,11 @@ function Sider() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 780,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
+         
         }
       },
       {
@@ -71,11 +71,13 @@ function Sider() {
                                   <>  
                                       <div>
                                        <div className='overall' key={list.id}>
+                                                 {/* <center> */}
                                                  <div>
                                                       <img src={list.img} alt='' ></img>
                                                       <p>{list.name}</p>
                                                       <p className='category' style={{fontSize:"9px", marginBottom:"10px",fontFamily:"monospace",paddingTop:"10px",paddingBottom:"5px" ,color:"GrayText"} }>{list.category}</p>
                                                  </div>
+                                                 {/* </center> */}
                                        </div>
                                        </div>
                                   </>

@@ -303,6 +303,7 @@
 .body-container .photo .photo2
 {
   display: none;
+
 }
 
 .follow
@@ -786,8 +787,6 @@
   margin-top: 90px;
   margin-left: 55px;
   margin-bottom: 5px;
- 
-  
 }
 .card .overall div
 {
@@ -1958,10 +1957,199 @@
     
 }
 /* media----Queray */
-@media  screen and (max-width:480px)
-{
+@media screen and  (max-width:798px)
+{ 
+      .mobileheader  ul
+      {
+         visibility: hidden;
+         padding: 0px;
+      }
+      .mobileheader .center-links
+      {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        /* margin-left: 10px; */
+      }
+      .mobileheader .center-links li
+      {
+        font-size: 33px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      .container ul ,.header ul
+      {
+          display: flex;
+          justify-content: space-around;
+      } 
+      .mobileheader ul .menu 
+      {
+        
+          display: block;
+          font-size: 40px;
+          z-index: 11;
+          visibility: visible;
+      }
+      /* .body-container 
+          {
+            display: flex;
+            justify-content: space-around;
+            background: url("./images/background.png");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-position: -85px;
+            margin-top: 10px;
+            overflow-x: hidden;
+          }
+          .body-container .text h5
+         {
+            font-size:20px;
+         }
+         .body-container .text
+         {
+            margin: 190px 0px;
+            margin-left: 25px;
+            z-index: 1;
+        }
+        .body-container .text h1
+        {
+          font-size: 45px;
+          font-family: Arial, Helvetica, sans-serif;
+          letter-spacing: 2px;
+          margin-top: 27px;
+          line-height: 60px;     
+            
+        }
+        .body-container .text .h1
+        {
+            font-size: 56px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            line-height: 50px;
+        }
+        .body-container .text .p
+        {
+          margin-top: 28px;
+          margin-bottom: 28px;
+          font-size: 10px;
+          color: #000;
+          font-weight: bold;
+        }
+        .body-container .text .span
+          {
+             font-size: 15px;
+             color: rgb(31, 31, 31);
+          }
+          .body-container .text  div a
+          {
+             padding: 11px;
+             font-size: 13px;
+          }
+          .body-container .text  div a::before
+          {
+            display: none;
+          }
+          .body-container .text  div a:hover
+          {
+              color: black;
+              background-color: transparent;
+          }
+          .body-container .text  div a ,.body-container .text  div p
+          {
+            position: initial;
+          }
+          .body-container .photo .photo1
+          {
+            display: none;
+          }
+          .body-container .photo .photo2
+          {
+            display: block;
+              position: absolute;
+              right: -20px;
+              top: 65px;
+              width:520px;
+              opacity: 0.3;
+              filter: grayscale(0.3);
+          }
+          .follow
+          {
+            display: none;
+          }  */
+              /* ---body---content ----end */
 
+          /* ---about-----me----start--- */
+        
+          /* .about-us
+          {
+              margin: 80px 0px;
+              margin-bottom: 50px;
+          }
+          .about-us .hr
+          {  
+            margin-left: 330px;
+            margin-top: 30px;
+          }
+          .about-us p
+          {
+            font-size: 15px;
+            padding: 0px 45px;
+          } */
+          /* ---about-----me----end--- */
+
+           /* skillss-------start--- */
+           /* .skills
+           {
+            display: flex;
+            flex-direction: column;
+           } 
+           .professional h1
+           {
+              margin-right: 0px;
+           }
+           .circle-container
+           {
+             margin-right: 0px;
+           }
+           .circle-container .inner h1
+           {
+             margin-left: 10px;
+           } */
+             
+           /* ---skills----end---- */
+
+           /* ---project --start ---*/
+            
+        /* .card .overall  div
+        {
+          
+            width: 400px;
+           
+        }
+        .card .overall img
+        {
+           width: 400px;
+        }
+        .arrow-right,.arrow-left
+        {
+        display: none;
+        }
+        .card-container h1 .hr1
+           {
+            display: none;
+           } */
+
+} 
+@media  only screen and (max-width:480px) 
+{
    /* mobile-header-start */
+      .container,.body-container,.professional-container
+      {
+         overflow: hidden;
+      }
+      
+      
       .active 
       {
         padding: 10px 0px;  
@@ -1997,7 +2185,7 @@
           visibility: visible;
           margin-bottom: 28px;
           margin-right: 100px;
-    
+  
       }
       .mobileheader .menu .menu-open
       {
@@ -2021,8 +2209,6 @@
          background-position: -5px -20px;
          background-blend-mode:lighten;
          /* background-position: center; */
-
-         
       }
       @keyframes side 
       {
@@ -2042,8 +2228,7 @@
         font-weight: bold;
         font-family: 'Alegreya Sans SC', sans-serif;
         margin: 12px 25px;
-        
-      
+  
       }
       .mobile-sidebar-open
       {
@@ -2059,7 +2244,7 @@
               flex-direction: column;
               padding-top: 10px;
               padding-left: 7px;
-              height: 100vh;
+              height: auto;
              
        }
        .header2-menu ul
@@ -2095,12 +2280,12 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-left: 20px;
+          margin-left: 40px;
          }
          .mobile-sidebar ul div 
          {  margin-right: 100px;
-          display: flex;
-          align-items: center;
+           display: flex;
+           align-items: center;
           }
           .mobile-sidebar .skil:hover .mobile-sub-menu
           {
@@ -2189,7 +2374,7 @@
             background-repeat:no-repeat;
             background-position: center;
             background-size: cover;
-            background-position: -85px;
+            background-position: -100px 10px;
             margin-top: 10px;
             overflow-x: hidden;
           }
@@ -2201,7 +2386,7 @@
          {
             margin: 190px 0px;
             margin-left: 25px;
-            z-index: 1;
+  
         }
          .body-container .text h1
           {
@@ -2209,8 +2394,8 @@
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: 2px;
             margin-top: 27px;
-            line-height: 60px;     
-              
+            line-height: 60px;  
+  
           }
       
           .body-container .text .h1
@@ -2219,35 +2404,54 @@
               margin-bottom: 10px;
               margin-top: 10px;
               line-height: 50px;
-          }
 
-         
+          }
           .body-container .text .p
           {
             margin-top: 28px;
             margin-bottom: 28px;
             font-size: 10px;
-            color: #000;
+            color: #000000;
             font-weight: bold;
+            z-index: 111;
+            position: relative;
+          
+          }
+          .body-container .text .p span
+          {
+             color: white; 
           }
           .body-container .text .span
           {
              font-size: 15px;
              color: rgb(31, 31, 31);
+             position: relative;
+             z-index: 111;
+            
+          }
+          .body-container .text .span span
+          {
+              color: white;
           }
           .body-container .text  div a
           {
              padding: 11px;
              font-size: 13px;
+             z-index: 2;
+             background-color: #40c057ec;
+                  color: #000;
+           border: 1.5px solid  #40c057ec;
+
           }
+       
           .body-container .text  div a::before
           {
             display: none;
           }
           .body-container .text  div a:hover
           {
-              color: black;
-              background-color: transparent;
+              color: #40c057ec;
+              background-color: black;
           }
           .body-container .text  div a ,.body-container .text  div p
           {
@@ -2260,12 +2464,21 @@
           .body-container .photo .photo2
           {
             display: block;
-              position: absolute;
+              position:absolute;
               left: 10px;
               top: 68px;
               width:570px;
               opacity: 0.3;
               filter: grayscale(0.3);
+              z-index: 1;    
+              /* overflow: hidden;   */
+             
+             
+          }
+          .body-container .text  div p
+          {
+             z-index: 111;
+             color: white;
           }
           .follow
           {
@@ -2347,7 +2560,7 @@
            {
             top: 200px;
            }
-           .arrow-right img,.arrow-left img
+            .arrow-right img,.arrow-left img
              {
                width: 34px;
                z-index: 2;
@@ -2359,6 +2572,7 @@
              .arrow-right{
                  right: 32px;
              }
+             
            /* ---project --end-------*/
 
           /* what i do--start */
@@ -2467,7 +2681,7 @@
     .right .bg
     {
         margin-top: 80px;
-        position:absolute;
+        position:absolute; 
         top: -55px;
         left: 200px;
         width: 200px;
@@ -2497,7 +2711,7 @@
     }
     .right-contact .social-links img
     {
-       width: 22px;
+       width: 20px;
        margin-top: 0px;
     }
     .right-contact .first 
@@ -2509,26 +2723,24 @@
     /* lets--work---together--end--- */
     /* ----fooder----start--- */
     
-    .fooder-hr
-    {
-         margin-left: 12px;
-         margin-top: 80px;
-         width: 95%;
-    }
     .fooder
     {
-       gap:10px;
-       padding: 2px;
+      gap: 30px;
+      margin-left: 40px;
+      margin-top: 55px;
+      margin-bottom: 20px;
+      padding: 2px;
     }
-    .fooder p
+    .fooder-hr
     {
-        font-size:9px;
+       display: none;
     }
     .fooder div .social-icons
-    {
-        font-size: 20px;
-        margin: 0px 4px;
-    }
+    { display: none;}
+    .fooder p
+        {
+            font-size:10px;
+        }
    /* ---fooder---end---- */
 
     /* work-page-design ----start===--- */
@@ -2559,7 +2771,7 @@
     }
     .fooder-page
     {
-        margin-top: 159pc;
+        margin-top: 149pc;
     }
     .back-white .img2 ,
     .back-white .img5,
@@ -2571,10 +2783,10 @@
     /* work-page-design--end--- */
 
     /* about---page----start---- */
-    .about-container
-    {
-       overflow: hidden;
-    }
+      .about-container
+      {
+        overflow: hidden;
+      }
     .about-txt p
     {
       margin-left: 55px;
@@ -2606,8 +2818,8 @@
     .about-image .image
     {
        position: absolute;
-       left: 66px;
-       margin-bottom: 31.7pc;
+       left: 35px;
+       margin-bottom: 32.9pc;
        z-index: 0;
     }
     .about-image-text
@@ -2638,6 +2850,10 @@
     /* about-page----end--- */
 
     /* contact---page-----start -----*/
+    .contact-container
+    {
+       overflow: hidden;
+    }
     .contact-middle .middle-container 
     {
         margin-left: 30px;
@@ -2647,8 +2863,6 @@
         display: flex;
         flex-direction: column;
         border: 1px solid #40c057ec;
-
-        
     }
     .contact-middle .middle-container .social-middle
     {
@@ -2693,7 +2907,7 @@
     }
     .tech-1
     {
-          margin-left: 55px;
+          margin-left:140px;
           margin-top: 10px;
     }
     .tech-2
@@ -2707,7 +2921,7 @@
     }
     .tech-4
     {
-          margin-left: 140px;
+          margin-left: 55px;
           margin-top: 0px;
 
     }
@@ -2722,8 +2936,173 @@
           margin-bottom: 10px;
 
     }
-   
-
-
 }    
+
+@media only screen  and (max-width:412px)
+{
+  .container,.body-container 
+      {
+         overflow: hidden;
+      }
+  .mobileheader .center-links li
+  {
+    font-size: 33px;
+    margin-bottom: 49px;
+  }
+  .mobileheader ul .menu
+  {
+      margin-right: 130px;
+      margin-bottom: 35px;
+
+  } 
+  .mobile-sidebar .mobile-menu-user 
+  {
+      margin-top: 70px;
+  }
+  .mobile-sidebar .mobile-sub-menu li .links{
+    font-size: 15px;
+  }
+  .body-container .text h1
+  {
+      font-size: 47px;
+      
+        }
+        .mobile-sidebar .mobile-sub-menu li .mobile-dot
+        {
+          visibility: hidden;
+              
+        }
+  .body-container .photo .photo2
+  {
+      width: 570px;
+      left: 0px;
+      opacity: 1;
+      filter: brightness(0.96);
+      overflow: hidden;
+  }
+
+  .about-us .hr
+  {
+      margin-left: 280px;
+  }
+  .circle-container
+  {
+      column-gap: 80px;
+  }
+  .slick-slide > div 
+  {
+     margin: 0px -27px;
+  }
+  .card .overall div
+  {
+      width: 350px;
+  }
+  .card .overall img
+  {
+      width: 350px;
+     height: 190px;
+
+  }
+  .card-container h1
+  {
+     font-size: 22px;
+     
+  }
+  .card-container h1 .hr2
+  {
+      width: 130px;
+
+  }
+  .arrow-left
+  {
+     right: 85px;
+  }
+  .arrow-right{
+      right: 35px;
+  }
+  .what-left p
+  {
+      font-size: 15.5px;
+  }
+  .input2
+  {
+     margin-left: 40px;
+  }
+  .attachment,.send
+  {
+      width: 320px;
+      padding: 18px 85px;
+
+  }
+  .send
+    {
+      padding: 18px 95px;
+    }
+    .right-contact .first 
+    {
+   margin: 50px 8px;
+   z-index: 111;
+   margin-top: 50px;
+
+      
+    }
+    .right-contact .first  .phone-icon
+    {
+        font-size: 41px;
+    }
+    .right-contact .first div p
+       {
+         font-size: 12px;    
+       }
+.right-contact .first div a
+{
+    font-size: 13px;
+}
+.right .bg
+{
+    margin-top: 80px;
+    position:absolute; 
+    top: -55px;
+    left: 168px;
+    width: 150px;
+    height: 200px;
+}
+.fooder
+{
+  gap: 30px;
+  margin-left: 40px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+.fooder-hr
+{
+   display: none;
+}
+.fooder div .social-icons
+{ display: none;}
+.fooder p
+    {
+        font-size:10px;
+    }
+
+    .back-white
+    {
+        margin-left: 31px;
+        width: 85%;
+    }
+    .contact-middle .middle-container 
+    {
+      margin-left: 22px;
+    }
+    .contact-middle .middle-container .social-middle
+    {
+       padding: 30px 20px;
+    } .middle-container .contact-middle
+    {
+       width: 350px;
+        left: 9px;
+    }
+    
+}
   

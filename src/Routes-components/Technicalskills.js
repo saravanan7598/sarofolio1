@@ -26,10 +26,11 @@ function Technicalskills() {
                 </div>
          </div>
          <div className='tech-container'>
-            <div className='tech tech-1'>
-                 <img src={html} alt=''></img>
-                 <h5>HTML</h5>
-                 <p>I've successfully completed the HTML learning process. I'm now ready to start building  web pages.</p>
+            <div className='tech tech-4'>
+                 
+                 <img src={react} alt=''></img>
+                 <h5>REACT - JS</h5>
+                 <p>Leveled up my web dev skills! React learning completed. Now I'm ready to build some projects and expand my skills.</p>
                  <a href='#'>Read More</a>
             </div>
             <div className='tech tech-2'>
@@ -44,10 +45,10 @@ function Technicalskills() {
                  <p>I've been diligently working on learning JavaScript, and I'm excited to announce that I've completed the JavaScript.</p>
                  <a href='#'>Read More</a>
             </div>
-            <div className='tech tech-4'>
-                 <img src={react} alt=''></img>
-                 <h5>REACT - JS</h5>
-                 <p>Leveled up my web dev skills! React learning completed. Now I'm ready to build some projects and expand my skills.</p>
+            <div className='tech tech-1'>
+            <img src={html} alt=''></img>
+                 <h5>HTML</h5>
+                 <p>I've successfully completed the HTML learning process. I'm now ready to start building  web pages.</p>
                  <a href='#'>Read More</a>
             </div>
             <div className='tech tech-5'>
