@@ -16,7 +16,7 @@ function Body() {
                          <h5>Hello,</h5>
                          <h1>I`m <span>SARAVANAN</span></h1>
                          <h1 className='h1'><span>Front-End</span> Developer</h1>
-                         <p className='p'>HTML - CSS <span> - JAVASCRIPT - REACTJS</span></p> 
+                         <p className='p'>HTML -  CSS <span> - JAVASCRIPT - REACTJS</span></p> 
                         <span className='span'>Building smart <span>interfaces  and  useful interactions, developing</span> rich web<br></br> applications a<span>nd seamless web experiences</span>
                           </span>
                          <div>

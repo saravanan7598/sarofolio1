@@ -23,9 +23,11 @@ function About() {
                              <hr className='aboutpage-hr'></hr>
                          </div>
                          <div className='about-image'>
-                                     <div className='image2'></div>
+                             <div>
+                                <div className='image2'></div>
                                 <div className='image'>
                                 </div>
+                             </div>
                                 <div className='about-image-text'>
                                    <h3>Hey there,  I Am <span> Saravanan</span></h3>
                                    <p> I am first year student. I am pursing my bachelor degree at SKCET. I studied front-end technology in Youtube. My technical skill are good.I create many project in HTML, CSS, Js and ReactJs project like Youtube Clone etc. My project is my github id. Develop user-friendly and visually appealing user interfaces (UI) using  React JS.</p>

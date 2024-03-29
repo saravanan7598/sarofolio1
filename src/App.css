@@ -184,8 +184,6 @@
   background-position: -13px;
   margin-top: 10px;
   overflow-x: hidden;
-  
-  
 }
 
 .body-container .text
@@ -296,7 +294,7 @@
 /* -images for profile */
 .body-container .photo .photo1
 {
-  margin-top: 80px;
+   margin-top: 80px;
    width:550px;
    cursor: pointer;
 }
@@ -839,7 +837,7 @@
 }
 .overlay-bg
 {
-  background-color: rgba(0, 0, 0, 0.749);
+  background-color: rgba(0, 0, 0, 0.76);
   padding: 95px 0px;
   padding-top:10px ;
 
@@ -1990,166 +1988,14 @@
           z-index: 11;
           visibility: visible;
       }
-      /* .body-container 
-          {
-            display: flex;
-            justify-content: space-around;
-            background: url("./images/background.png");
-            background-repeat:no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-position: -85px;
-            margin-top: 10px;
-            overflow-x: hidden;
-          }
-          .body-container .text h5
-         {
-            font-size:20px;
-         }
-         .body-container .text
-         {
-            margin: 190px 0px;
-            margin-left: 25px;
-            z-index: 1;
-        }
-        .body-container .text h1
-        {
-          font-size: 45px;
-          font-family: Arial, Helvetica, sans-serif;
-          letter-spacing: 2px;
-          margin-top: 27px;
-          line-height: 60px;     
-            
-        }
-        .body-container .text .h1
-        {
-            font-size: 56px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            line-height: 50px;
-        }
-        .body-container .text .p
-        {
-          margin-top: 28px;
-          margin-bottom: 28px;
-          font-size: 10px;
-          color: #000;
-          font-weight: bold;
-        }
-        .body-container .text .span
-          {
-             font-size: 15px;
-             color: rgb(31, 31, 31);
-          }
-          .body-container .text  div a
-          {
-             padding: 11px;
-             font-size: 13px;
-          }
-          .body-container .text  div a::before
-          {
-            display: none;
-          }
-          .body-container .text  div a:hover
-          {
-              color: black;
-              background-color: transparent;
-          }
-          .body-container .text  div a ,.body-container .text  div p
-          {
-            position: initial;
-          }
-          .body-container .photo .photo1
-          {
-            display: none;
-          }
-          .body-container .photo .photo2
-          {
-            display: block;
-              position: absolute;
-              right: -20px;
-              top: 65px;
-              width:520px;
-              opacity: 0.3;
-              filter: grayscale(0.3);
-          }
-          .follow
-          {
-            display: none;
-          }  */
-              /* ---body---content ----end */
-
-          /* ---about-----me----start--- */
-        
-          /* .about-us
-          {
-              margin: 80px 0px;
-              margin-bottom: 50px;
-          }
-          .about-us .hr
-          {  
-            margin-left: 330px;
-            margin-top: 30px;
-          }
-          .about-us p
-          {
-            font-size: 15px;
-            padding: 0px 45px;
-          } */
-          /* ---about-----me----end--- */
-
-           /* skillss-------start--- */
-           /* .skills
-           {
-            display: flex;
-            flex-direction: column;
-           } 
-           .professional h1
-           {
-              margin-right: 0px;
-           }
-           .circle-container
-           {
-             margin-right: 0px;
-           }
-           .circle-container .inner h1
-           {
-             margin-left: 10px;
-           } */
-             
-           /* ---skills----end---- */
-
-           /* ---project --start ---*/
-            
-        /* .card .overall  div
-        {
-          
-            width: 400px;
-           
-        }
-        .card .overall img
-        {
-           width: 400px;
-        }
-        .arrow-right,.arrow-left
-        {
-        display: none;
-        }
-        .card-container h1 .hr1
-           {
-            display: none;
-           } */
-
 } 
 @media  only screen and (max-width:480px) 
 {
    /* mobile-header-start */
-      .container,.body-container,.professional-container
+      .container,.body-container,.professional-container,.body-container .photo
       {
-         overflow: hidden;
+         overflow-x: hidden;
       }
-      
-      
       .active 
       {
         padding: 10px 0px;  
@@ -2165,6 +2011,7 @@
         visibility: visible;
         position: absolute;
         left: 0;
+        
       }
       .mobileheader .center-links li
       {
@@ -2201,7 +2048,6 @@
          left: -1000px;
          width:60%;
          z-index: 22222222;
-         background: rgb(249, 249, 249);
          animation: side 0.4s 0s forwards;
          opacity: 1;
          background: url("./images/background3.png");
@@ -2227,7 +2073,7 @@
         font-size: 33px;
         font-weight: bold;
         font-family: 'Alegreya Sans SC', sans-serif;
-        margin: 12px 25px;
+        margin: 18px 25px;
   
       }
       .mobile-sidebar-open
@@ -2280,7 +2126,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-left: 40px;
+          margin-left: 10px;
          }
          .mobile-sidebar ul div 
          {  margin-right: 100px;
@@ -2347,7 +2193,8 @@
             display: flex;
             align-items: center;
             margin-left: 20px;
-            margin-top: 130px;
+            margin-top: 80px;
+
          }
          .mobile-sidebar .mobile-menu-user .user-icon
          {
@@ -2390,20 +2237,19 @@
         }
          .body-container .text h1
           {
-            font-size: 45px;
+            font-size: 54px;
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: 2px;
             margin-top: 27px;
-            line-height: 60px;  
-  
+            line-height: 60px;
           }
       
           .body-container .text .h1
           {
-              font-size: 56px;
+              font-size: 57px;
               margin-bottom: 10px;
               margin-top: 10px;
-              line-height: 50px;
+              line-height: 55px;
 
           }
           .body-container .text .p
@@ -2415,23 +2261,25 @@
             font-weight: bold;
             z-index: 111;
             position: relative;
-          
           }
           .body-container .text .p span
           {
              color: white; 
+             margin-left: 45px;
           }
           .body-container .text .span
           {
              font-size: 15px;
-             color: rgb(31, 31, 31);
+             color: #40c057ec;
              position: relative;
              z-index: 111;
+             font-weight: 600;
+
             
           }
           .body-container .text .span span
           {
-              color: white;
+              color: #40c057ec;
           }
           .body-container .text  div a
           {
@@ -2465,15 +2313,12 @@
           {
             display: block;
               position:absolute;
-              left: 10px;
+              left: 36px;
               top: 68px;
               width:570px;
-              opacity: 0.3;
-              filter: grayscale(0.3);
+              opacity: 1;
+              filter: brightness(0.96);
               z-index: 1;    
-              /* overflow: hidden;   */
-             
-             
           }
           .body-container .text  div p
           {
@@ -2540,8 +2385,25 @@
            /* ---project --start ---*/
               
           .slick-slide > div {
-              margin: 0 -30px;
+              margin: 0 0px;
+              display: flex;
+              justify-content:start;
+              align-items: center;
            } 
+           /* .slick-slide > div 
+           {
+              margin: 0px -27px;
+           } */
+           .card .overall div
+           {
+               width: 350px;
+           }
+           .card .overall img
+           {
+               width: 350px;
+              height: 190px;
+         
+           }
            .card-container h1 .hr1
            {
             display: none;
@@ -2576,6 +2438,15 @@
            /* ---project --end-------*/
 
           /* what i do--start */
+          .background
+          {
+              background: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(0,0,0,0.5) ), url(".//images/wal.jpeg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: -190px;
+              margin-top: 170px;
+              background-attachment: fixed;
+          }
 
           .what-left p
           {
@@ -2591,6 +2462,7 @@
           /* what i do--end--- */
 
           /* my---services --start--- */
+
           .services h1
           {
              margin-top: 90px;
@@ -2683,9 +2555,10 @@
         margin-top: 80px;
         position:absolute; 
         top: -55px;
-        left: 200px;
+        left: 210px;
         width: 200px;
         height: 200px;
+        /* display:none; */
     }
     .right .bg div
     {
@@ -2696,23 +2569,37 @@
         font-size: 16px;
         margin-top: 0px;
         margin-bottom: 0px;
+        justify-content: flex-start;
+        margin-left: 4px;
+
     }
     .right .bg  hr
     {
       display: block;
-      margin-left: 75px;
-      margin-top: 10px;
+      margin-left: 11px;
+      margin-top: 12px;
       width: 30px;
     }
+
     .right .bg div p
     {
-          font-size:14.6px;
+          font-size:14px;
           margin-bottom: 5px;
+          text-align: left;
+          flex-wrap: wrap;
+          width: 150px;
+          
     }
-    .right-contact .social-links img
+    .right-contact .social-links img 
     {
        width: 20px;
-       margin-top: 0px;
+       margin-top: -6px;
+       margin-left: 8px;
+
+    }
+    .right-contact .social-links
+    {
+        justify-content: flex-start;
     }
     .right-contact .first 
     {
@@ -2758,20 +2645,24 @@
     {
         margin-left: 35px;
         width: 85%;
+       
     }
     .back-white img
     {
        width: 95%;
        margin: 10px 11px;
+      
     }
     .back-white .imges
     {
         display: flex;
         flex-direction: column;
+        
     }
     .fooder-page
-    {
-        margin-top: 149pc;
+    { 
+     
+      margin-top: 155pc;  
     }
     .back-white .img2 ,
     .back-white .img5,
@@ -2797,13 +2688,13 @@
     {
       margin-left: 200px;
       margin-top: 20px;
-  
       width: 50px;
+      position: relative;
     }
     .about-image
      {
-      display: flex;
-      flex-direction: column; 
+        display: flex;
+        flex-direction: column;
      } 
     .about-image .image2,.about-image .image
     {
@@ -2818,8 +2709,8 @@
     .about-image .image
     {
        position: absolute;
-       left: 35px;
-       margin-bottom: 32.9pc;
+       left: 9px;
+       top: 10px;
        z-index: 0;
     }
     .about-image-text
@@ -2862,31 +2753,30 @@
         margin-top:40px;
         display: flex;
         flex-direction: column;
-        border: 1px solid #40c057ec;
+        /* border: 1px solid #40c057ec; */
     }
     .contact-middle .middle-container .social-middle
     {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        flex: wrap;
+        gap: 25px;
         width: 100%;
         height: 150px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         padding: 30px 40px; 
-     
-
     }
     .middle-container .contact-middle
     {
       width: 360px;
-      left: 24px;
+      left: 30px;
       top: 110px;
     }
     .map-middle iframe
     {
       width: 100%;
-      padding: 2dvb;
+      padding: 10px;
       top: 46pc;
     }
   
@@ -2938,26 +2828,31 @@
     }
 }    
 
-@media only screen  and (max-width:412px)
+@media only screen  and (max-width:420px)
 {
-  .container,.body-container 
+  .container,.body-container,.professional-container,.body-container .photo
       {
          overflow: hidden;
       }
+    
   .mobileheader .center-links li
   {
     font-size: 33px;
     margin-bottom: 49px;
   }
+  .active 
+  {
+    padding: 8px 0px;  
+    height: 60px;
+  }
   .mobileheader ul .menu
   {
-      margin-right: 130px;
+      margin-right: 160px;
       margin-bottom: 35px;
-
   } 
   .mobile-sidebar .mobile-menu-user 
   {
-      margin-top: 70px;
+      margin-top: 80px;
   }
   .mobile-sidebar .mobile-sub-menu li .links{
     font-size: 15px;
@@ -2965,13 +2860,12 @@
   .body-container .text h1
   {
       font-size: 47px;
-      
-        }
-        .mobile-sidebar .mobile-sub-menu li .mobile-dot
-        {
-          visibility: hidden;
+  }
+  .mobile-sidebar .mobile-sub-menu li .mobile-dot
+  {
+   visibility: hidden;
               
-        }
+  }
   .body-container .photo .photo2
   {
       width: 570px;
@@ -2985,6 +2879,28 @@
   {
       margin-left: 280px;
   }
+  .column .in
+  {
+      width: 325px;
+  }
+
+  @keyframes ani1 {
+  
+    100%
+    {
+      width: 300px;
+    }
+    
+  }
+  @keyframes ani4 {
+  
+    100%
+    {
+      width: 270px;
+    }
+    
+  }
+  
   .circle-container
   {
       column-gap: 80px;
@@ -3040,9 +2956,9 @@
     }
     .right-contact .first 
     {
-   margin: 50px 8px;
-   z-index: 111;
-   margin-top: 50px;
+      margin: 50px 8px;
+       z-index: 111;
+      margin-top: 50px;
 
       
     }
@@ -3058,6 +2974,11 @@
 {
     font-size: 13px;
 }
+.mobile-sidebar ul .skil
+{
+  margin-left: 50px;
+}
+
 .right .bg
 {
     margin-top: 80px;
@@ -3091,18 +3012,233 @@
         margin-left: 31px;
         width: 85%;
     }
+    .fooder-page
+    {
+        margin-top: 141pc;
+        display: none;
+    }
     .contact-middle .middle-container 
     {
       margin-left: 22px;
     }
     .contact-middle .middle-container .social-middle
     {
-       padding: 30px 20px;
+       padding: 30px 5px;
     } .middle-container .contact-middle
     {
        width: 350px;
         left: 9px;
     }
+    .aboutpage-hr
+    {
+         margin-left: 189px;
+    }
+    .about-image .image2
+    {
+       width: 320px;
+    }
+    .about-image .image
+    {
+       width: 302px;
+       background-position-y: -110px;
+       background-position-x: -60px;
+    }
+    .about-image .image:hover 
+    {
+      background-position-y: -400px;
+      background-position-x: -200px;
+    }
+    .tech-container
+    {
+       margin-left: -17px;
+    }
+  
     
 }
+@media only screen and (min-width:420px) and 
+(max-width:450px)
+{
+  .right .bg div p
+  {
+      width: 100px;
+     
+  }
+  .right-contact .social-links img
+
+  {
+      width: 18px;
+      /* flex-wrap: wrap; */
+      margin-top:-6px;
+  }
+  .contact-middle .middle-container 
+  {
+    margin-left: 23px;
+  }
+  .contact-middle .middle-container .social-middle
+  {
+       padding: 30px 20px;
+       gap: 22px;
+  }
+  .middle-container .contact-middle
+  {
+      left: 15px;
+  }
+  .mobileheader ul .menu 
+  {
+     margin-right: 130px;
+  }
+
+
+}
+@media only screen and (max-width:390px)
+{
+  .right
+  {
+      margin-left: 95px;
+  }
+  .mobile-sidebar .mobile-sub-menu li .links
+  {
+      font-size: 14px;
+  }
+  .body-container .photo .photo2
+  {
+      width: 540px;
+      top: 88px;
+  }
+  .body-container .text .span
+  {
+      font-size: 14px;
+      font-weight: bold;
+  }
+  .slick-slide > div {
+    margin: 0 -35px;
+    
+ } 
+ .services .emoj .emoj2
+ {
+     left: 290px;
+ }
+ .input2
+ {
+    margin-left: 25px;
+ }
+ .right .bg div p
+ {
+    width: 80px;
+ }
+ .right-contact .social-links img
+ {
+     margin-left: 3px;
+ }
+ .contact-middle .middle-container .social-middle
+ {
+   gap: 15px;
+   padding: 30px 20px;
+ }
+ .middle-container .contact-middle
+ {
+    width: 330px;
+ }
+ .body-container .text .p span
+ {
+    color: white; 
+    margin-left: 15px;
+ }
+}
+@media only screen and (min-width:390px) and 
+(max-width:410px)
+{
+  .right
+  {
+      margin-left: 90px;
+  }
+  .body-container .text .p span
+  {
+     color: white; 
+     margin-left: 25px;
+  }
+  .contact-middle .middle-container .social-middle
+  {
+    gap: 17px;
+    padding: 30px 20px;
+  }
+  .middle-container .contact-middle
+  {
+     width: 340px;
+  }
+  .right .bg div p
+  {
+      width: 90px;
+  }
+}
+@media only screen and (min-width:360px) and 
+(max-width:385px)
+{
+  .right
+  {
+      margin-left: 80px;
+  }
+  .mobileheader .center-links li
+  {
+    font-size: 31px;
+  }
+  .mobileheader ul .menu
+  {
+      margin-right: 190px;
+  }
+  .contact-middle .middle-container .social-middle
+  {
+    gap: 13px;
+    padding: 30px 10px;
+  }
+  .middle-container .contact-middle
+  {
+     width: 300px;
+     left: 13px;
+  }
+}
+@media only screen and (max-width:360px)
+{
+  .slick-slide > div {
+    margin: 0 -40px;
   
+ }
+ .card .overall div
+ {
+     width: 330px;
+ }
+ .card .overall img
+ {
+     width: 330px;
+    height: 190px;
+
+ }
+  .mobileheader ul .menu
+  {
+      margin-right: 210px;
+      font-size: 35px;
+  }
+  .mobileheader .center-links li
+  {
+    font-size: 30px;
+
+  }
+  .about-us .hr
+  {
+    margin-left: 250px;
+  }
+  .attachment,.send
+  {
+      width: 300px;
+      padding: 15px 70px;
+  }
+  .send
+  {
+    padding: 15px 85px;
+
+  }
+  .right
+  {
+      margin-left: 70px;
+  }
+}
