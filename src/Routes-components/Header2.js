@@ -31,25 +31,6 @@ function Header2()
   window.addEventListener('scroll',changenavbar)
 
   return (
-    // <div>
-    //      <div>
-    //         <div className="header2" >
-    //                    <ul>
-    //                        <li><Link to='/work'  className='links ' >Work</Link><hr className='header-hr'></hr></li>
-    //                        <li><Link to='/about'  className='links'>About</Link> <hr className='header-hr'></hr></li>
-    //                        <Link to='/' className='center-links'><li>PORTFOLIO</li></Link>
-    //                        <li><Link to='/contact'  className='links' >Contact</Link><hr className='header-hr'></hr></li>
-    //                        <li>Skills<MdKeyboardArrowDown className='arrow-down'  />
-    //                            <ul className='sub-menu'>
-    //                                <li><p><span><GoDotFill /></span><Link to='/professionalskills'  className='links'>Professional Skills</Link></p>
-    //                               <p><span><GoDotFill /></span><Link to='/technicalskills'  className='links'>Technical Skills</Link></p></li>
-    //                            </ul>
-    //                          </li>
-    //                    </ul>
-    //         </div>
-    //     </div>
-    // </div>
-    
     <div>
     <div  className={header ? 'container active' :'header2'}>
         <div className='mobileheader '> 
