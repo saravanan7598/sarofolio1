@@ -32,7 +32,7 @@ function Header2()
 
   return (
     <div>
-    <div  className={header ? 'container active' :'header2'}>
+    <div  className={header ? 'header2 active' :'header2'}>
         <div className='mobileheader '> 
                      
                <ul>
@@ -68,12 +68,12 @@ function Header2()
                    <li><p><FaUserSecret /></p><Link to='/about'  className='links' >About</Link> </li>
                    <li><p><AiFillContacts /></p><Link to='/contact'  className='links'>Contact</Link></li>
                    <li className='skil'>
-                           <div><GiSkills className='skil-icon'/><span>Skills</span><MdKeyboardArrowDown className='arrow-down' /></div>
+                           <div><p><GiSkills className='skil-icon'/></p><span>Skills</span><MdKeyboardArrowDown className='arrow-down' /></div>
                        <ul className='mobile-sub-menu'>
                        <li><span className='mobile-dot'><GoDotFill /></span><Link to='/professionalskills'  className='links'>Professional Skills</Link></li>
                           <li><span className='mobile-dot'><GoDotFill /></span><Link to='/technicalskills'  className='links'>Technical Skills</Link></li>
                        </ul>
-                       </li>
+                    </li>
                   <div className='mobile-menu-user'>
                         <span  className='user-icon'><FaRegUserCircle /></span>
                         <p>SARAVANAN</p>
