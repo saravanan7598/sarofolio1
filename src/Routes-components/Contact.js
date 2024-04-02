@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import  { useRef } from 'react';
 import { FaArrowUpLong } from "react-icons/fa6";
 import Header2 from './Header2';
@@ -10,6 +10,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { LuUpload } from "react-icons/lu";
 import emailjs from '@emailjs/browser';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 function Contact() {
 
  const [file,setFile]= useState(["No File Selected"]);
@@ -33,25 +35,29 @@ function Contact() {
      );
  };
 
+ useEffect(()=>{
+  AOS.init();
+},[])
+
   return (
 <div>
        <div className='contact-container'>
                <div className='headerpage'><Header2/></div>
                    <div className='banner'>
                             <div className='banner-txt og'>
-                                 <h1>CONTACT</h1>
-                                 <p>Portfolio  <FaArrowUpLong  className='work-icon'/><span>Contact</span></p>
+                                 <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"data-aos-once="true">CONTACT</h1>
+                                 <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000"data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Contact</span></p>
                             </div>
                     </div>
 
                 <div className="contact-middle">
                     <div className='middle-container'>
                              <div className='social-middle'>
-                                 <div className='social-middle-icons' title='iam_saravanan18'> <a href='https://www.instagram.com/iam_saravanan18/'><LuInstagram  /></a></div>
-                                 <div className='social-middle-icons' title='www.linkedin.com/in/saravanan759823'><a href='www.linkedin.com/in/saravanan759823'><FaLinkedinIn /></a></div>
-                                 <div className='social-middle-icons' title='https://github.com/Saravanan759823'><a href='https://github.com/Saravanan759823'><TbBrandGithubFilled /></a></div>
-                                 <div className='social-middle-icons' title='+91 7598238098'><a href='tel:+917598238098'><IoCall /></a></div>
-                                 <div className='social-middle-icons' title='+91 7598238098'><a href='https://wa.me/917598238098?text=Hello Saravanan!'><FaWhatsapp  /> </a>  </div> 
+                                 <div className='social-middle-icons' title='iam_saravanan18' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000"data-aos-once="true"> <a href='https://www.instagram.com/iam_saravanan18/'><LuInstagram  /></a></div>
+                                 <div className='social-middle-icons' title='www.linkedin.com/in/saravanan759823' data-aos="fade-up" data-aos-delay="120"  data-aos-duration="1200"data-aos-once="true"><a href='www.linkedin.com/in/saravanan759823'><FaLinkedinIn /></a></div>
+                                 <div className='social-middle-icons' title='https://github.com/Saravanan759823' data-aos="fade-up" data-aos-delay="140"  data-aos-duration="1400"data-aos-once="true"><a href='https://github.com/Saravanan759823'><TbBrandGithubFilled /></a></div>
+                                 <div className='social-middle-icons' title='+91 7598238098' data-aos="fade-up" data-aos-delay="180"  data-aos-duration="1600" data-aos-once="true"><a href='tel:+917598238098'><IoCall /></a></div>
+                                 <div className='social-middle-icons' title='+91 7598238098' data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1800" data-aos-once="true"><a href='https://wa.me/917598238098?text=Hello Saravanan!'><FaWhatsapp  /> </a>  </div> 
                              </div>
                         <div>
                                 <form ref={form} onSubmit={sendEmail}>

@@ -63,13 +63,13 @@ function Sider() {
   return (
     <div>
            <div className='card-container'>
-                     <h1><hr className='hr1'></hr>SOME OF MY LATEST <span style={{color:"black"}}>PROJECT</span><hr className='hr2'></hr></h1>
+                     <h1 data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true"><hr className='hr1'></hr>SOME OF MY LATEST <span style={{color:"black"}} >PROJECT</span><hr className='hr2' data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1200" ></hr></h1>
 
                  <div className='card'>
-                         <div className='arrow-right'>
+                         <div className='arrow-right' data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1400"  data-aos-once="true">
                             <img src={right} alt='' onClick={sliderRight}></img>
                          </div>
-                         <div className='arrow-left'>
+                         <div className='arrow-left' data-aos="fade-up" data-aos-delay="10"  data-aos-duration="500"  data-aos-once="true">
                             <img src={left} alt='' onClick={sliderLeft}></img>
                          </div>
                  <Slider ref={sliderRef} {...settings}>
@@ -78,14 +78,14 @@ function Sider() {
                         return (
                                   <>  
                                       <div>
-                                       <div className='overall' key={list.id}>
-                                                 {/* <center> */}
-                                                 <div>
+                                       <div className='overall' key={list.id}  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="500 "  data-aos-once="true">
+                                              
+                                                 <div >
                                                       <img src={list.img} alt='' ></img>
                                                       <p>{list.name}</p>
                                                       <p className='category' style={{fontSize:"9px", marginBottom:"10px",fontFamily:"monospace",paddingTop:"10px",paddingBottom:"5px" ,color:"GrayText"} }>{list.category}</p>
                                                  </div>
-                                                 {/* </center> */}
+                                                
                                        </div>
                                        </div>
                                   </>

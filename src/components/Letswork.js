@@ -102,7 +102,7 @@ function Letswork() {
                                          </div>
                                     </div>
                                 </div>
-                             
+                                 <div>
                                     <div className='bg'  data-aos="slide-left" data-aos-delay="300"     data-aos-duration="600" data-aos-easing="ease-in-out"  data-aos-offset="300"     data-aos-once="true">
                                         <div>
                                              <h5><FaLocationDot  className='location-icon' />Address</h5>
@@ -116,6 +116,7 @@ function Letswork() {
                                              <img src={linkedin} alt=''></img>
                                              <img src={github} alt=''></img>
                                         </div>
+                                    </div>
                                     </div>
                             </div>
                    </div>
