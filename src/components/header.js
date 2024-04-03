@@ -10,7 +10,7 @@ import { AiFillContacts } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
-
+import circlelogo from '../images/logo.jpg'
 
 function Header() {  
   const [menumobile,SetMenumobile]=useState(false)
@@ -40,6 +40,7 @@ function Header() {
                            <li><Link to='/work'  className='links '>Work</Link><hr className='header-hr'></hr></li>
                            <li><Link to='/about'  className='links' >About</Link> <hr className='header-hr'></hr></li>
                            <Link to='/' className='center-links'><li>PORTFOLIO</li></Link>
+                           <Link to='/' className='center-links2'><li><h1><span>P</span><img /><span>ORTFOLIO</span></h1></li></Link>
                            <li><Link to='/contact'  className='links'>Contact</Link><hr className='header-hr'></hr></li>
                            <li className='skills'>Skills<MdKeyboardArrowDown className='arrow-down' />
                                <ul className='sub-menu'>

@@ -9,6 +9,8 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiFillHome } from "react-icons/ai";
+import circlelogo from '../images/logo.jpg'
+
 function Header2() 
 {
   const [menumobile,SetMenumobile]=useState(false)
@@ -41,6 +43,7 @@ function Header2()
                    <li><Link to='/work'  className='links '>Work</Link><hr className='header-hr'></hr></li>
                    <li><Link to='/about'  className='links' >About</Link> <hr className='header-hr'></hr></li>
                    <Link to='/' className='center-links'><li>PORTFOLIO</li></Link>
+                   <Link to='/' className='center-links2'><li><h1><span className="p1">P</span><img  src={circlelogo} className='logo'/><span className='p2'>RTFOLIO</span></h1></li></Link>
                    <li><Link to='/contact'  className='links'>Contact</Link><hr className='header-hr'></hr></li>
                    <li className='skills'>Skills<MdKeyboardArrowDown className='arrow-down' />
                        <ul className='sub-menu'>
@@ -61,7 +64,7 @@ function Header2()
          </div>
     </div>
           <div className={menumobile ? 'mobile-sidebar header2-menu' : 'mobile-sidebar-open '}>
-          <h1>PORTFOLIO</h1>
+             <h1><span className="p1">P</span><img  src={circlelogo} className='logo'/><span className='p2'>RTFOLIO</span></h1>
                       <ul>
                       <li><p><AiFillHome /></p><Link to='/'  className='links '>Home</Link></li>
                    <li><p><GiFiles /></p><Link to='/work'  className='links '>Work</Link></li>
