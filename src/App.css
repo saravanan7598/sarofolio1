@@ -990,7 +990,7 @@
   max-width: 35rem;
    margin-top: 30px;
    margin-left: 55px;
-   background: url("./images/background4.png");
+   background: url("./images/background5.png");
    background-repeat:no-repeat;
    background-position: start;
    background-size: contain;
@@ -2041,8 +2041,6 @@
          top: -5px;
          left: -1000px;
          width:60%;
-       /* height: 800px;
-        */
         height: 100vh;
          z-index: 22222222;
          animation: side 0.4s 0s forwards;
@@ -2315,16 +2313,17 @@
               opacity: 1;
               filter: brightness(0.96);
               z-index: 1; 
-              animation: photo .5s 1s ease infinite;  
+              animation: photo 3s 1s ease infinite;  
           }
           @keyframes photo {
+             
             0%
             {
-                width: 570px;
+              top: 68px;
             }
             100%
             {
-              width: 571.4px;
+                top: 65px;
             }
             
           }
@@ -2340,7 +2339,7 @@
           /* ---body---content ----end */
 
           /* ---about-----me----start--- */
-        
+  
           .about-us
           {
               margin: 80px 0px;
@@ -2374,6 +2373,9 @@
            {
             display: flex;
             flex-direction: column;
+            background: url("./images/background4.png");
+           background-repeat:repeat;
+         background-size:contain;
            }  
            .professional h1
            {
@@ -2402,6 +2404,13 @@
            {
               margin: 0px -27px;
            } */
+           .card-container
+           {
+            background-repeat:repeat;
+            background-position: center;
+            background-size:contain;
+            margin-top: -25px;
+           }
            .card .overall div
            {
                width: 350px;
@@ -2470,7 +2479,10 @@
           /* what i do--end--- */
 
           /* my---services --start--- */
-
+          .services
+          {
+             overflow-x: hidden;
+          }
           .services h1
           {
              margin-top: 90px;
@@ -2480,6 +2492,7 @@
                display: flex;
                flex-direction: column;
                margin-top: 70px;
+               z-index: 111;
           }
           .service-card hr
           {
@@ -2487,6 +2500,10 @@
              width: 100px;
              height: 3px;
              margin-left: 70px;
+          }
+          .services .emoj 
+          {
+            position: relative;
           }
           .services .emoj .emoj1
           {
@@ -2513,7 +2530,14 @@
           }
       /* my---services --end----- */
     /* lets--work---together----start--- */
+    .let-work
+    {
+         background-repeat:repeat;
+         background-size: contain;
+  background-clip:padding-box;
 
+       
+    }
     .work-together-flex
     {
       display: flex;
@@ -2665,6 +2689,8 @@
     {
         margin-left: 35px;
         width: 85%;
+        margin-bottom: 10pc;
+        
        
     }
     .back-white img
@@ -2681,8 +2707,8 @@
     }
     /* .fooder-page
     { 
-     
-      margin-top: 155pc;  
+      position: absolute;
+      top: 381px;
     } */
     .back-white .img2 ,
     .back-white .img5,
@@ -3363,6 +3389,18 @@
     .mobile-sidebar ul .skil
   {
     margin-left: 45px;
+  }
+  .aboutpage-hr
+  {
+      margin-left: 160px;
+  }
+  .about-txt p
+  {
+     margin-left: 45px;
+  }
+  .about-image-text table
+  {
+     font-size: 13px;
   }
 }
 @media only screen and (max-width:361px)

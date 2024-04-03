@@ -57,7 +57,7 @@ function Maincontent() {
 
 
                        <div className='professional'>
-                            <h1 data-aos="fade-right" data-aos-delay="10"  data-aos-duration="800"  data-aos-offset="400" data-aos-once="true">Professional Skills<hr></hr></h1>
+                            <h1 data-aos="fade-right" data-aos-delay="10"  data-aos-duration="700" data-aos-once="true">Professional Skills<hr></hr></h1>
                           <div class="circle-container space">
                                      <div class="outer o1" data-aos="fade-up" data-aos-delay="10"  data-aos-duration="800" data-aos-once="true">
                                               <div class="inner i1">
