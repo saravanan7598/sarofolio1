@@ -44,14 +44,14 @@ function Letswork() {
           <div className='let-work'>
                    <h1 
                    data-aos="slide-right"  data-aos-delay="20"  data-aos-duration="80"
-                   data-aos-easing="ease-in" data-aos-offset="400" data-aos-once="true" >
+                   data-aos-easing="ease-in"  data-aos-once="true" >
                    Let`s work together<span>.</span>
                    </h1>
              <div className='work-together-flex' >
                    <div className='left' 
                    data-aos="slide-right" data-aos-delay="50" 
                    data-aos-once="true"    data-aos-duration="300" 
-                   data-aos-easing="ease-in-out" data-aos-offset="400">
+                   data-aos-easing="ease-in-out" >
                        <form ref={form} onSubmit={sendEmail}>
                        <div className='all-contact'>
                            <div className='input'>
@@ -68,7 +68,7 @@ function Letswork() {
                        </div>
                        </form>
                    </div>
-                   <div className='right'  data-aos="slide-left" data-aos-delay="50"     data-aos-duration="300" data-aos-easing="ease-in-out"  data-aos-offset="400"     data-aos-once="true" >
+                   <div className='right'  data-aos="slide-left" data-aos-delay="50"     data-aos-duration="300" data-aos-easing="ease-in-out"  data-aos-once="true" >
                    <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#40c057ec"  d="M0,224L18.5,197.3C36.9,171,74,117,111,101.3C147.7,85,185,107,222,112C258.5,117,295,107,332,101.3C369.2,96,406,96,443,96C480,96,517,96,554,117.3C590.8,139,628,181,665,165.3C701.5,149,738,75,775,74.7C812.3,75,849,149,886,186.7C923.1,224,960,224,997,229.3C1033.8,235,1071,245,1108,208C1144.6,171,1182,85,1218,85.3C1255.4,85,1292,171,1329,181.3C1366.2,192,1403,128,1422,96L1440,64L1440
                    ,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5
                    ,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320
@@ -103,7 +103,7 @@ function Letswork() {
                                     </div>
                                 </div>
                                  <div>
-                                    <div className='bg'  data-aos="slide-left" data-aos-delay="300"     data-aos-duration="600" data-aos-easing="ease-in-out"  data-aos-offset="300"     data-aos-once="true">
+                                    <div className='bg'  data-aos="slide-left" data-aos-delay="300"     data-aos-duration="600" data-aos-easing="ease-in-out"    data-aos-once="true">
                                         <div>
                                              <h5><FaLocationDot  className='location-icon' />Address</h5>
                                              <hr></hr>
@@ -111,10 +111,10 @@ function Letswork() {
                                              <p style={{color:"#404040"}}>Sankarankovil</p>
                                         </div>
                                           <div className='social-links'>
-                                             <img src={insta} alt=''></img>
-                                             <img src={facebook} alt=''></img>
-                                             <img src={linkedin} alt=''></img>
-                                             <img src={github} alt=''></img>
+                                            <a  href='https://www.instagram.com/iam_saravanan18/'><img src={insta} alt=''></img></a>
+                                            <a href='#'><img src={facebook} alt=''></img></a>
+                                            <a href='www.linkedin.com/in/saravanan759823' ><img src={linkedin} alt=''></img></a>
+                                            <a href='https://github.com/Saravanan759823'><img src={github} alt=''></img></a>
                                         </div>
                                     </div>
                                     </div>

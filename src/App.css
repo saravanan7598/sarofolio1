@@ -114,7 +114,7 @@
 }
 .active .sub-menu
 {
-   top: 50px;
+   top: 30px;
 }
 .sub-menu 
 {
@@ -829,7 +829,7 @@
 }
 .overlay-bg
 {
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.697);
   padding: 95px 0px;
   padding-top:10px ;
 
@@ -893,6 +893,12 @@
   background-color: #302f2f;
   outline: none;
   border: none;
+  visibility:hidden;
+
+}
+.services .emoj 
+{
+   display: none;
 }
 .services .emoj .emoj1
 {
@@ -1298,6 +1304,7 @@
    width: 25px;
    margin-top: 39px;
    margin-left: 8px;
+   cursor: pointer;
 }
 
 /* =--------------------fooder----------- */
@@ -1381,10 +1388,9 @@
 }
 .og
 {
-  background-color: rgba(5, 5, 5, 0.788);
+  background-color: rgba(6, 6, 6, 0.788);
   padding-bottom: 90px;
   padding-top:10px;
-
 }
 .banner-txt h1
 {
@@ -1842,7 +1848,7 @@
 
 /*---------technical----skills----*/
 
-.professional-container .banner .skills-span
+.professional-container .banner .skills-span ,.technical-container  .banner .skills-span
 {
     background-color: #40c057ec;
     color: #000;
@@ -1858,10 +1864,7 @@
    margin-left: 210px;
    margin-top: 50px;
 }
-.tech-2,.tech-4,.tech-6
-{
-   margin-top:30px ;
-}
+
 .fooder-page-tech
 {
    margin-top: 50pc;
@@ -1922,11 +1925,11 @@
 }
 .tech-container .tech p
 {
-    font-family: cursive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #302f2f;
     margin-top: 10px;
      text-align: center;
-     font-size: 14px;
+     font-size: 12px;
      margin-bottom: 25px;
      line-height: 26px;
 }
@@ -1950,6 +1953,108 @@
   border-bottom:1px solid black;
   
     
+}
+
+/* ----professional--skills---- */
+.professional-box
+{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-top: 60px;
+    border-radius: 10px; 
+    cursor: pointer;
+
+}
+.professional-box .box:hover .box-bg
+{
+  background-color: #000000c7;
+
+
+}
+.professional-box .box
+{
+  
+    width: 300px;
+    height: 350px;
+    border-radius: 10px; 
+}
+.boxx2
+{
+  width: 100%;
+  height: 100%;
+  background:url('.//images/photography-back.jpeg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.boxx4
+{
+  width: 100%;
+  height: 100%;
+  background:url('.//images/teamwork-back.avif');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.box1
+{
+  width: 100%;
+  height: 100%;
+  background:url('.//images/creative.gif');
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+.box2
+{ 
+  width: 100%;
+  height: 100%;
+  background:url('.//images/photography.gif');
+  background-size: cover;
+  background-position: -8px -7px;
+  background-repeat:no-repeat;
+
+
+}.box3
+{
+  width: 100%;
+  height: 100%;
+  background:url('.//images/coding1.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-radius: 10px; 
+
+
+}.box4
+{
+  width: 100%;
+  height: 100%;
+  background:url('.//images/teamwork.gif');
+  background-size: cover;
+  background-position: -35px -7px;
+}
+.professional-box .box-bg
+{
+    background-color: #00000071;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    transition: all 0.4s ease-in-out;
+}
+.professional-box .box .box-bg h1
+{
+    font-size: 30px;
+    font-family: Poppins,sans-serif;
+    color: white;
+    z-index: 111;
+    font-weight: 700;
+
+}
+.professional-box .box .box-bg h1 span
+{
+   color: #40c057ec;
 }
 /* media----Queray */
 @media screen and  (max-width:798px)
@@ -2027,21 +2132,16 @@
         font-size: 16px;
         margin-bottom: 40px;
       }
-      .mobileheader .center-links2 li h1 ,.mobile-sidebar h1
+      .mobileheader .center-links2 li h1
       {
         letter-spacing: 2px;
          font-family: 'Alegreya Sans SC', sans-serif;
       }
-      .mobile-sidebar h1
-      {
-        margin: 17px 25px;
-        font-size: 32px;
-      }
-      .mobileheader .center-links2 li h1 .p2 ,.mobile-sidebar h1 .p2
+      .mobileheader .center-links2 li h1 .p2
       { 
              margin-left: 39px;
       }
-      .mobileheader .center-links2 li .logo ,.mobile-sidebar h1 .logo
+      .mobileheader .center-links2 li .logo 
       {
             width: 35px;
             position: absolute;
@@ -2079,7 +2179,8 @@
       {
         color: rgb(0, 0, 0);
       }
-      .mobile-sidebar
+       
+       .mobile-sidebar
       {
          
          position: fixed;
@@ -2121,6 +2222,13 @@
               padding-left: 7px;
               height: auto;
              
+       }
+       .mobile-sidebar h1
+       {
+        letter-spacing: 2px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 33.5px;
+        padding: 18px 24px;
        }
        .header2-menu ul
        {
@@ -2507,7 +2615,7 @@
           /* my---services --start--- */
           .services
           {
-             overflow-x: hidden;
+             overflow: hidden;
           }
           .services h1
           {
@@ -2526,6 +2634,7 @@
              width: 100px;
              height: 3px;
              margin-left: 70px;
+             visibility: visible;
           }
           .services .emoj 
           {
@@ -2867,7 +2976,6 @@
        background-blend-mode:screen;
        overflow-y: hidden;
        margin-left: 15px;
-
     }
    
     .tech-1
@@ -2901,10 +3009,33 @@
           margin-bottom: 10px;
 
     }
-    .container,.body-container,.professional-container,.body-container .photo
+    .container,.body-container,.professional-container,.body-container .photo,.technical-container
       {
          overflow: hidden;
       }
+
+      /* ---technical--skillss---end--- */
+
+      /* ---professional--skills--start--- */
+      .professional-box
+      {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          margin-top: 50px;
+      }
+      .professional-container .banner h1
+      {
+         font-size: 47px;
+      }
+      .professional-container .banner p
+      {
+         font-size: 18px;
+      }
+       /* ---professional--skills--end--- */
+     
+    
+
 }    
 
 @media only screen  and (max-width:420px)
@@ -2918,12 +3049,6 @@
       {
         font-size: 15px;
       }
-      .mobile-sidebar h1
-      {
-         font-size: 30px;
-        margin: 19px 25px;
-
-      }
       .mobileheader .center-links2 li .logo ,.mobile-sidebar h1 .logo
       {
         width: 35.2px;
@@ -2932,6 +3057,13 @@
   {
     padding: 8px 0px;  
     height: 60px;
+  }
+  .mobile-sidebar h1
+  {
+   letter-spacing: 2px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size: 32px;
+   padding: 18px 24px;
   }
   .mobileheader ul .menu
   {
@@ -3147,6 +3279,14 @@
     {
        margin-left: -17px;
     }
+    .professional-container .banner h1
+    {
+       font-size: 43px;
+    }
+    .professional-container .banner p
+    {
+       font-size: 17px;
+    }
   
     
 }
@@ -3204,6 +3344,14 @@
   }
   .mobile-sidebar .mobile-sub-menu li .links{
     font-size: 16px;
+  }
+  .professional-container .banner h1
+  {
+     font-size: 46px;
+  }
+  .professional-container .banner p
+  {
+     font-size: 17px;
   }
 
 }
@@ -3272,11 +3420,11 @@
     color: white; 
     margin-left: 15px;
  }
- .professional-container .banner h1
+ .technical-container .banner h1
  {
     font-size: 46px;
  }
- .professional-container .banner p
+ .technical-container .banner p
  {
     font-size: 16px;
  }
@@ -3313,10 +3461,21 @@
   }
   .mobile-sidebar h1
   {
-     font-size: 30px;
-    margin: 19px 25px;
+   letter-spacing: 2px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size: 31px;
+   padding: 18px 25px;
+
+
   }
-  
+  .professional-container .banner h1
+  {
+     font-size: 41px;
+  }
+  .professional-container .banner p
+  {
+     font-size: 16px;
+  }
 
 }
 @media only screen and (min-width:390px) and 
@@ -3344,11 +3503,11 @@
   {
       width: 90px;
   }
-  .professional-container .banner h1
+  .technical-container.banner h1
   {
      font-size: 46px;
   }
-  .professional-container .banner p
+  .technical-container .banner p
   {
      font-size: 16px;
   }
@@ -3366,6 +3525,14 @@
   }
   .mobile-sidebar .mobile-sub-menu li .links{
     font-size: 16px;
+  }
+  .professional-container .banner h1
+  {
+     font-size: 42px;
+  }
+  .professional-container .banner p
+  {
+     font-size: 16px;
   }
 
 }
@@ -3427,7 +3594,7 @@
     }
     .mobile-sidebar ul .skil
   {
-    margin-left: 45px;
+    margin-left: 14px;
   }
   .aboutpage-hr
   {
@@ -3449,8 +3616,22 @@
   }
   .mobile-sidebar h1
   {
-     font-size: 28.5px;
-    margin: 19px 25px;
+   letter-spacing: 2px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size: 31px;
+   padding: 18px 25px;
+  }
+  .mobile-sidebar
+  {
+      width: 70%;
+  }
+  .professional-container .banner h1
+  {
+     font-size: 39px;
+  }
+  .professional-container .banner p
+  {
+     font-size: 15px;
   }
 }
 @media only screen and (max-width:361px)
@@ -3550,7 +3731,7 @@
   }
   .mobile-sidebar ul .skil
   {
-    margin-left: 60px;
+    margin-left: 25px;
   }
   .mobile-sidebar .mobile-sub-menu
   {
@@ -3583,7 +3764,21 @@
   }
   .mobile-sidebar h1
   {
-     font-size: 28.5px;
-    margin: 19px 25px;
+   letter-spacing: 2px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size: 31px;
+   padding: 17px 25px;
+  }
+  .mobile-sidebar
+  {
+      width: 70%;
+  }
+  .professional-container .banner h1
+  {
+     font-size: 35px;
+  }
+  .professional-container .banner p
+  {
+     font-size: 14px;
   }
 }

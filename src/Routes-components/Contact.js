@@ -46,7 +46,7 @@ function Contact() {
                    <div className='banner'>
                             <div className='banner-txt og'>
                                  <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"data-aos-once="true">CONTACT</h1>
-                                 <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000"data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Contact</span></p>
+                                 <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1200"data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Contact</span></p>
                             </div>
                     </div>
 

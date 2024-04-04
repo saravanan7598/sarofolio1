@@ -64,7 +64,8 @@ function Header2()
          </div>
     </div>
           <div className={menumobile ? 'mobile-sidebar header2-menu' : 'mobile-sidebar-open '}>
-             <h1><span className="p1">P</span><img  src={circlelogo} className='logo'/><span className='p2'>RTFOLIO</span></h1>
+             {/* <h1><span className="p1">P</span><img  src={circlelogo} className='logo'/><span className='p2'>RTFOLIO</span></h1> */}
+             <h1>PORTFOLIO</h1>
                       <ul>
                       <li><p><AiFillHome /></p><Link to='/'  className='links '>Home</Link></li>
                    <li><p><GiFiles /></p><Link to='/work'  className='links '>Work</Link></li>

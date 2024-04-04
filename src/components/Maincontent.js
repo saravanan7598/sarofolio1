@@ -18,7 +18,7 @@ function Maincontent() {
                         <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000" data-aos-once="true">About Me<hr></hr></h1>
                         
                         <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1500" data-aos-once="true"><span>Hello I`m Saravanan.</span> I am first year student. I am pursing my bachelor degree at SKCET. I studied front-end technology in Youtube. My technical skill are good.I create many project in HTML, CSS, Js and ReactJs project like Youtube Clone etc. My project is my github id.</p>          
-                        <hr className='hr'></hr>
+                        <hr className='hr' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1500" data-aos-once="true"></hr>
                   </div>
                 
                   <div className='skills overlay ' >
@@ -79,7 +79,7 @@ function Maincontent() {
                                                </svg>
                                       </div>
 
-                                      <div class="outer o3" data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1200" data-aos-once="true" >
+                                      <div class="outer o3" data-aos="fade-left" data-aos-delay="10"  data-aos-duration="1200" data-aos-once="true" >
                                               <div class="inner i3">
                                                      <h1 id="number">85 <span>%</span></h1>
                                                       <p>Team Work</p>
@@ -89,7 +89,7 @@ function Maincontent() {
                                                </svg>
                                       </div>
 
-                                      <div class="outer o4" data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1400"  data-aos-once="true">
+                                      <div class="outer o4" data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1400"  data-aos-once="true">
                                               <div class="inner i4">
                                                      <h1 id="number">93 <span>%</span></h1>
                                                       <p>Creativity</p>

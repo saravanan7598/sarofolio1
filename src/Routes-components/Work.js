@@ -29,7 +29,7 @@ function Work() {
            <div className='banner' >
                   <div className='banner-txt og'>
                        <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true">WORK</h1>
-                       <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000" data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Work</span></p>
+                       <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1200" data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Work</span></p>
                   </div>
            </div>
            <h1 className='side-text' >Portfolio</h1>

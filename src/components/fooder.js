@@ -12,10 +12,10 @@ function Fooder() {
                  <p>@23-02-2024 on the day created</p>
                  <p>Made by @S.Saravanan ❤️</p>
                  <div>
-                      <LuInstagram  className='social-icons'/>
-                      <FaLinkedinIn  className='social-icons'/>
-                      <TbBrandGithubFilled  className='social-icons'/>
-                      <FaFacebookF className='social-icons' />
+                      <a href='https://www.instagram.com/iam_saravanan18/'><LuInstagram  className='social-icons'/></a>
+                      <a href='www.linkedin.com/in/saravanan759823'><FaLinkedinIn  className='social-icons'/></a>
+                      <a href='#'><TbBrandGithubFilled  className='social-icons'/></a>
+                      <a href='https://github.com/Saravanan759823'><FaFacebookF className='social-icons' /></a>
                  </div>
            </div>
 

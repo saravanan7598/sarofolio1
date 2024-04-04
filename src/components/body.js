@@ -12,7 +12,7 @@ function Body() {
   return (
     <div className='bodycontainer'> 
            <div className='body-container'>
-                   <div className='text'>
+                   <div className='text'  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true">
                          <h5>Hello,</h5>
                          <h1>I`m <span>SARAVANAN</span></h1>
                          <h1 className='h1'><span>Front-End</span> Developer</h1>
@@ -25,9 +25,9 @@ function Body() {
                               <p>View Portfolio <img src={icon1} alt='' className='icon1'></img></p>
                          </div>
                    </div>
-                   <div className='photo'>
-                        <img src={photo} alt='' className='photo1'></img>
-                        <img src={photo1} alt='' className='photo2'></img>
+                   <div className='photo' >
+                        <img src={photo} alt='' className='photo1' data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1500"  data-aos-once="true"></img>
+                        <img src={photo1} alt='' className='photo2'  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1500"  data-aos-once="true"></img>
                    </div>
            <div className='follow'>
                 <hr className="hr-1"></hr>

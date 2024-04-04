@@ -61,7 +61,7 @@ function Header() {
             </div>
                   <div className={menumobile ? 'mobile-sidebar' : 'mobile-sidebar-open'}>
                                   <h1>PORTFOLIO</h1>
-                              <ul>
+                          <ul>
                               <li><p><AiFillHome /></p><Link to='/'  className='links '>Home</Link></li>
                            <li><p><GiFiles /></p><Link to='/work'  className='links '>Work</Link></li>
                            <li><p><FaUserSecret /></p><Link to='/about'  className='links' >About</Link> </li>

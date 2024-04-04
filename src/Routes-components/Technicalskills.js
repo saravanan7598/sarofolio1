@@ -21,12 +21,12 @@ function Technicalskills() {
       },[])
   return (
 <div>
- <div className='professional-container'>
+ <div className='technical-container'>
     <div className='headerpage'><Header2/></div>
          <div className='banner'>
                 <div className='banner-txt og'>
                      <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"data-aos-once="true">Technical<span className='skills-span'>Skills</span></h1>
-                     <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000"data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Skills <FaArrowUpLong  className='work-icon'/></span><span>TechnicalSkills</span></p>
+                     <p data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1200"data-aos-once="true">Portfolio  <FaArrowUpLong  className='work-icon'/><span>Skills <FaArrowUpLong  className='work-icon'/></span><span>TechnicalSkills</span></p>
                 </div>
          </div>
          <div className='tech-container'>

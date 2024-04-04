@@ -63,7 +63,7 @@ function Sider() {
   return (
     <div>
            <div className='card-container'>
-                     <h1 data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true"><hr className='hr1'></hr>SOME OF MY LATEST <span style={{color:"black"}} >PROJECT</span><hr className='hr2' data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1200" ></hr></h1>
+                     <h1 data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true"><hr className='hr1'></hr>SOME OF MY LATEST <span style={{color:"black"}} >PROJECT</span><hr className='hr2' data-aos="fade-right" data-aos-delay="10"  data-aos-duration="1200"  data-aos-once="true"></hr></h1>
 
                  <div className='card'>
                          <div className='arrow-right' data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1400"  data-aos-once="true">
