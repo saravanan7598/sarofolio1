@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import webdesign from '../images/webdesign1.gif'
-import emoj1 from '../images/emoj1.png'
-import emoj2 from '../images/emoj3.png'
+// import emoj1 from '../images/emoj1.png'
+// import emoj2 from '../images/emoj3.png'
+import emojgif1 from '../images/emojgif1.gif'
+import emojgif2 from '../images/emojgif2.gif'
 import web from '../images/web1.gif'
 import hack from '../images/hacking1.gif'
 import AOS from 'aos'
@@ -16,8 +18,8 @@ function Myservices() {
         <div className='services'>
                <h1 data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true">My S<span style={{color:"black"}}>ervices</span></h1> 
                <div className='emoj'>
-                     <img src={emoj1} alt='' className='emoj1'></img>
-                     <img src={emoj2} alt='' className='emoj2'></img>
+                     <img src={emojgif1} alt='' className='emoj1'></img>
+                     <img src={emojgif2} alt='' className='emoj2'></img>
                 </div>
                <div className='service-card' >
                  <hr  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1500"  data-aos-once="true"></hr>

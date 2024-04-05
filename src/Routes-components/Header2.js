@@ -10,11 +10,15 @@ import { GoDotFill } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiFillHome } from "react-icons/ai";
 import circlelogo from '../images/logo.jpg'
+import { ImCross } from "react-icons/im";
+
 
 function Header2() 
 {
   const [menumobile,SetMenumobile]=useState(false)
-  const[header,SetHeader]=useState(false)
+  const[header,SetHeader]=useState(false);
+  const[submenuu,Setmenu]=useState(false);
+
   const changenavbar = () =>
   {
       if(window.scrollY >=80)
@@ -29,6 +33,11 @@ function Header2()
   {
     SetMenumobile(!menumobile)
       
+  }
+  var submenu =() =>
+  {
+    Setmenu(!submenuu)
+   
   }
   window.addEventListener('scroll',changenavbar)
 
@@ -53,9 +62,9 @@ function Header2()
                      </li>
 
                      
-                     <li className='menu' onClick={MenuOpen}> 
+                     <li className={menumobile ? 'menu closemenu':'menu'} onClick={MenuOpen}> 
                               <IoMenu  className='menu-open' />
-                              {/* <RxCross1  className='menu-close'/> */}  
+          
                       </li>
 
                </ul>
@@ -63,26 +72,29 @@ function Header2()
                     
          </div>
     </div>
-          <div className={menumobile ? 'mobile-sidebar header2-menu' : 'mobile-sidebar-open '}>
+          <div className={menumobile ? 'blackandwhite header2-menu ' : 'mobile-sidebar-open '}>
              {/* <h1><span className="p1">P</span><img  src={circlelogo} className='logo'/><span className='p2'>RTFOLIO</span></h1> */}
-             <h1>PORTFOLIO</h1>
+             <div className='mobile-sidebar'>
+              <h1>PORTFOLIO</h1>
                       <ul>
-                      <li><p><AiFillHome /></p><Link to='/'  className='links '>Home</Link></li>
-                   <li><p><GiFiles /></p><Link to='/work'  className='links '>Work</Link></li>
-                   <li><p><FaUserSecret /></p><Link to='/about'  className='links' >About</Link> </li>
-                   <li><p><AiFillContacts /></p><Link to='/contact'  className='links'>Contact</Link></li>
-                   <li className='skil'>
-                           <div><p><GiSkills className='skil-icon'/></p><span>Skills</span><MdKeyboardArrowDown className='arrow-down' /></div>
-                       <ul className='mobile-sub-menu'>
-                       <li><span className='mobile-dot'><GoDotFill /></span><Link to='/professionalskills'  className='links'>Professional Skills</Link></li>
-                          <li><span className='mobile-dot'><GoDotFill /></span><Link to='/technicalskills'  className='links'>Technical Skills</Link></li>
-                       </ul>
-                    </li>
-                  <div className='mobile-menu-user'>
-                        <span  className='user-icon'><FaRegUserCircle /></span>
+                             <li><p><AiFillHome /></p><Link to='/'  className='links '>Home</Link></li>
+                          <li><p><GiFiles /></p><Link to='/work'  className='links '>Work</Link></li>
+                          <li><p><FaUserSecret /></p><Link to='/about'  className='links' >About</Link> </li>
+                          <li><p><AiFillContacts /></p><Link to='/contact'  className='links'>Contact</Link></li>
+                          <li className='skil' onClick={submenu}>
+                             <div className={submenuu ? "activearrow": ''}><p><GiSkills className= 'skil-icon'/></p><span>Skills</span><MdKeyboardArrowDown className='arrow-down' /></div>
+                                  <ul className={submenuu ? 'mobile-sub-menu activesubmenu' : 'mobile-sub-menu'}>
+                                    <li><Link to='/professionalskills'  className='links'>Professional Skills</Link></li>
+                                    <li><Link to='/technicalskills'  className='links'>Technical Skills</Link></li>
+                                 </ul>
+                          </li>
+                        <div className='mobile-menu-user'>
+                              <span  className='user-icon'><FaRegUserCircle /></span>
                         <p>SARAVANAN</p>
                   </div>
                   </ul>
+            </div>
+              <ImCross className='menu-close' onClick={MenuOpen}/> 
          </div>
 </div>
   )

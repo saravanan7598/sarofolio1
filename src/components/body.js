@@ -12,7 +12,7 @@ function Body() {
   return (
     <div className='bodycontainer'> 
            <div className='body-container'>
-                   <div className='text'  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1000"  data-aos-once="true">
+                   <div className='text' >
                          <h5>Hello,</h5>
                          <h1>I`m <span>SARAVANAN</span></h1>
                          <h1 className='h1'><span>Front-End</span> Developer</h1>
