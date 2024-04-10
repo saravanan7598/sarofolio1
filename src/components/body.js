@@ -1,6 +1,6 @@
 import React from 'react'
 import photo from '../images/photo.png'
-import photo1 from '../images/photo1.png'
+import photo1 from '../images/photo3.png'
 import icon1 from '../images/icon1.png'
 import resume from '../images/resume.jpg'
 import insta from '../images/insta.png'
@@ -26,8 +26,8 @@ function Body() {
                          </div>
                    </div>
                    <div className='photo' >
-                        <img src={photo} alt='' className='photo1' data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1500"  data-aos-once="true"></img>
-                        <img src={photo1} alt='' className='photo2'  data-aos="fade-up" data-aos-delay="10"  data-aos-duration="1500"  data-aos-once="true"></img>
+                        <img src={photo} alt='' className='photo1' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1500"  data-aos-once="true"></img>
+                        <img src={photo1} alt='' className='photo2'  data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1500"  data-aos-once="true"></img>
                    </div>
            <div className='follow'>
                 <hr className="hr-1"></hr>

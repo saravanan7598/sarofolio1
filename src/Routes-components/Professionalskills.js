@@ -48,7 +48,7 @@ function Professionalskills() {
                          <div className='box boxx4' data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1700" data-aos-once="true">
                             <div className='box4'>
                             <div className='box-bg'>
-                              <h1>Team<span>work</span></h1>
+                              <h1>Edit<span>ing</span></h1>
                             </div>
                             </div>
                          </div>

@@ -1,14 +1,12 @@
-// import React from 'react'
+
 import Body from './components/body';
 import Fooder from './components/fooder';
-// import Header from './components/header';
 import Letswork from './components/Letswork';
 import Maincontent from './components/Maincontent';
 import Myservices from './components/myservices';
 import Sider from './components/Sider';
 import What from './components/what ';
 import Header2 from './Routes-components/Header2';
-// import Welcome from './components/welcome';
 import React, { useEffect, useState } from 'react'
 import circlelogo from './images/logo.jpg'
 // import { IoMenu } from "react-icons/io5";
@@ -22,12 +20,11 @@ const[showed,setShowed]=useState(false);
 var show = () =>
 {
       setShowed(!showed);
-      // sessionStorage.setItem("components",1)
 }
  useEffect(()=>{
   const text = document.querySelector('.p');
   text.innerHTML =text.innerText.split("").map(
-       (char , i)=>`<span style="transform:rotate(${i *12}deg)">${char}</span>`).join("")
+       (char , i)=>`<span style="transform:rotate(${i *6.9}deg)">${char}</span>`).join("")
  },[])
 
   
