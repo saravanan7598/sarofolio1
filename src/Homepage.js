@@ -24,7 +24,7 @@ var show = () =>
  useEffect(()=>{
   const text = document.querySelector('.p');
   text.innerHTML =text.innerText.split("").map(
-       (char , i)=>`<span style="transform:rotate(${i *6.9}deg)">${char}</span>`).join("")
+       (char , i)=>`<span style="transform:rotate(${i *20}deg)">${char}</span>`).join("")
  },[])
 
   
