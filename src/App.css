@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-/* ---------Header------ */
 ::selection
 {
     background-color: #40c057ec;
@@ -11,6 +10,230 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+
+}
+/* -------welcome------0 */
+/* .video
+{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   filter: blur(0.4px);
+
+}
+@media (min-aspect-ratio:16/9)
+{
+   .video,.video1
+   {
+      width: 100%;
+      height: auto;
+   }
+}
+@media (max-aspect-ratio:16/9)
+{
+   .video,.video1
+   {
+      width:auto;
+      height: 100%;
+   }
+} */
+.home-page
+{
+    display: none;
+}
+.welcome
+{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.welcome img
+{
+   width: 300px;
+   border-radius: 50%;
+   animation: circleroot1 9s 0s linear infinite;
+   visibility: hidden;
+   position: absolute;
+   margin-top: -15px;
+}
+@keyframes circleroot1 {
+  0%
+  {
+      transform: rotate(0px);
+  }
+  100%
+  {
+      
+    transform: rotatey(360deg);
+    
+  }
+}
+.welcomeshow
+{
+   visibility: hidden;
+}
+.welcomeshow img
+{
+  visibility: visible;
+  z-index: 22;
+  animation: circleroot 1s ease-in-out 0.2s forwards ,
+  circlemotion .9s ease-in-out 1.2s forwards;
+
+}
+@keyframes circleroot
+{
+  10%
+  {
+      transform: scale(1.5);
+    
+  }
+  50%
+  {
+      transform:  scale(1.7) rotatey(180deg);
+  }
+  70%
+  {
+      transform: scale(1);
+      
+  } 
+  } 
+
+  @keyframes circlemotion
+  {
+    0%
+    {
+      transform: scale(1) rotate(-360deg);
+    }
+    98%
+    {
+      margin-top: -45pc;
+      margin-right: 135px;
+      width: 37px;
+      opacity: 1;
+    
+
+    }
+    100%
+    {
+      margin-top: -45pc;
+      margin-right: 135px;
+      width: 37px;
+      opacity: 0;
+  }
+  }
+
+
+.welcome h1
+{
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-size:60px;
+   margin-top: -50px; 
+}
+.welcome h1 span
+{
+    color: #40c057ec;
+}
+.welcome button
+{
+    background-color: #40c057ec;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 17px 20px;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    font-family:cursive ;
+    font-weight: bold;
+    margin-top: 100px;   
+}
+.cir-cle
+{
+     position: relative;
+     width:300px;
+     height: 300px;
+     border-radius:50%;
+     /* background: #ccc; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px;
+}
+.lo-go
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url('./images/logo2.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+.te-xt
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+   0%
+   {
+       transform: rotate(0deg);
+  }
+  100%
+  {
+     transform: rotate(360deg);
+  }
+  
+}
+.te-xt span
+{
+   position: absolute;
+   left: 50%;
+   font-size: 1.4rem;
+   transform-origin: 0 150px;
+}
+/* ---------Header------ */
+.mobileheader .center-links li 
+{
+  font-size: 17px;
+}
+.mobileheader .center-links li h1
+{
+   letter-spacing: 2px;
+   font-family: 'Alegreya Sans SC', sans-serif;
+}
+.mobileheader .center-links li h1 .p2
+{ 
+       margin-left: 39px;
+}
+.mobileheader .center-links li .logo 
+{
+      width: 36px;
+      position: absolute;
+      border-radius: 50%;
+      animation: circlelogo 10s  linear 2.2s infinite;
+}
+@keyframes circlelogo {
+   0%
+   {
+      transform: rotate(0deg);
+   }
+   100%
+   {
+      transform: rotate(360deg);
+   }
+  
 }
 .active 
 {
@@ -21,20 +244,19 @@
      z-index:1111;
      width: 100%;
      color: white;
-     
 }
 .header2
 {
     padding: 8px;
     height: 60px;
     transition: 0.2s all ease;  
-    z-index:2222;
+    /* z-index:2222; */
     width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 9px;
     position: fixed;
     top: 0;
-     z-index:222;
+     z-index:2;
      width: 100%;
 }
 .container ul ,.header2 ul
@@ -43,7 +265,7 @@
      display: flex;
      justify-content: center;
      align-items: center; 
-     margin-left: 35px;
+     margin-left: 45px;
   
 }
 .container ul li .links, .header2 ul li .links
@@ -86,15 +308,6 @@
 {
   text-decoration: none;
   display: none;
-}
-.container .center-links li, .header2 .center-links li
-{
- 
-  font-size: 35px;
-  font-weight: bold;
-  margin-top: 2px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  text-decoration: none;
 }
 .container ul .skills .arrow-down,
 .header2 ul .skills .arrow-down
@@ -176,8 +389,23 @@
   background-position: -13px;
   margin-top: -16px;
   overflow-x: hidden;
+  animation: opacity 2s ease-in-out 2.1s forwards;
+  opacity: 0;
 }
+@keyframes  opacity {
+  0%
+  {
+     opacity: 0;
+     margin-top: 20px;
+  }
+  100%
+  {
+    opacity: 1;
+    margin-top: -20px;
 
+  }
+  
+}
 .body-container .text
 {
     margin: 200px 0px;
@@ -2092,6 +2320,128 @@
 } 
 @media  only screen and (max-width:480px) 
 {
+  /* welcome----start--- */
+  .welcome img
+{
+   width: 200px;
+}
+  .welcome h1
+  {
+      font-size: 43px;
+      margin-top: -150px; 
+      line-height: 60px;
+      text-align: center;
+  }
+  .cir-cle
+  {
+        width: 200px;
+        height: 200px;
+  }
+   .lo-go
+    {
+        width: 150px;
+        height: 150px;
+    }
+    .te-xt span
+{
+   transform-origin: 0 100px;
+   font-size: 1.2rem;
+    
+}
+.welcome button
+{
+  font-size: 12px;
+  padding: 10px 10px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+
+}
+  .welcomeshow img
+  {
+    visibility: visible;
+    z-index: 22;
+    animation: circleroot 1s ease-in-out 0.2s forwards ,
+    circlemotion .9s ease-in-out 1.2s forwards;
+
+  }
+
+
+  @keyframes circleroot
+  {
+    10%
+    {
+        transform: scale(1.3);
+      
+    }
+    50%
+    {
+        transform:  scale(1.6) rotatey(180deg);
+    }
+    70%
+    {
+        transform: scale(1);
+        
+    } 
+    } 
+  
+    @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -53.8pc;
+        margin-right: 350px;
+        width: 37px;
+        opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -53.8pc;
+        margin-right: 350px;
+        width: 37px;
+        opacity: 0;
+    }
+    }
+  
+
+
+/* 
+  @keyframes circleroot
+  {
+      0%
+      {
+        margin-top: -5pc;
+        width: 250px;
+        opacity: 1;
+        transform: rotate(10deg);
+      }
+      98%
+      {
+        margin-top: -54.8pc;
+        margin-right: 350px;
+        width: 37px;
+        opacity: 0.8;
+        transform: rotate(360deg);
+  
+      }
+      100%
+      {
+        margin-top: -54.8pc;
+        margin-right: 350px;
+        width: 37px;
+        opacity: 0;
+        transform: rotate(360deg);
+  
+      }
+  
+  } */
+  /* welcome----end--- */
+
    /* mobile-header-start */
       .container,.body-container,.professional-container,.body-container .photo
       {
@@ -2100,6 +2450,7 @@
       .header2
       {
         overflow-x: hidden;
+       
       }
       .active 
       {
@@ -2145,7 +2496,7 @@
             width: 35px;
             position: absolute;
             border-radius: 50%;
-            animation: circlelogo 10s 1s linear infinite ;
+            animation: circlelogo 10s  linear 2.2s infinite;
       }
       @keyframes circlelogo {
          0%
@@ -2652,7 +3003,7 @@
                display: flex;
                flex-direction: column;
                margin-top: 70px;
-               z-index: 111;
+               /* z-index: 111; */
           }
           .service-card hr
           {
@@ -3068,6 +3419,57 @@
 
 @media only screen  and (max-width:420px)
 {
+       /* welcome----start--- */
+  .welcomeshow img
+  {
+    visibility: visible;
+    z-index: 22;
+    animation: circleroot 1s ease-in-out 0.2s forwards ,
+    circlemotion .9s ease-in-out 1.2s forwards;
+   
+  }
+  @keyframes circleroot
+  {
+    10%
+    {
+        transform: scale(1.2);
+      
+    }
+    50%
+    {
+        transform:  scale(1.5) rotatey(180deg);
+    }
+    70%
+    {
+        transform: scale(1);
+        
+    }
+  }
+       
+    @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -53pc;
+        margin-right: 290px;
+         width: 37px;
+       opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -53pc;
+        margin-right: 290px;
+        width: 37px;
+         opacity: 0;
+    }
+    }
+  /* welcome----end--- */
   .container,.body-container,.professional-container,.body-container .photo
       {
          overflow: hidden;
@@ -3370,6 +3772,59 @@
   {
      font-size: 17px;
   }
+     /* welcome----start--- */
+     .welcomeshow img
+     {
+       visibility: visible;
+       z-index: 22;
+       animation: circleroot 1s ease-in-out 0.2s forwards ,
+       circlemotion .9s ease-in-out 1.2s forwards;
+  
+     }
+     @keyframes circleroot
+     {
+       10%
+       {
+           transform: scale(1.2);
+         
+       }
+       50%
+       {
+           transform:  scale(1.5) rotatey(180deg);
+       }
+       70%
+       {
+           transform: scale(1);
+           
+       }
+     }
+               
+    @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -53.8pc;
+        margin-right: 310px;
+         width: 37px;
+       opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -53.8pc;
+        margin-right: 310px;
+        width: 37px;
+         opacity: 0;
+    }
+    }
+
+
+     /* welcome----end--- */
 
 }
 @media only screen and (max-width:390px)
@@ -3484,6 +3939,55 @@
       font-size: 17px;
       width: 120%;
   }
+    /* welcome----start--- */
+    .welcomeshow img
+    {
+      visibility: visible;
+      z-index: 22;
+      animation: circleroot 1s ease-in-out 0.2s forwards ,
+      circlemotion .9s ease-in-out 1.2s forwards;
+    }
+    @keyframes circleroot
+    {
+      10%
+      {
+          transform: scale(1.1);
+        
+      }
+      50%
+      {
+          transform:  scale(1.4) rotatey(180deg);
+      }
+      70%
+      {
+          transform: scale(1);
+          
+      }
+    }
+    @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -53pc;
+        margin-right: 260px;
+         width: 37px;
+       opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -53pc;
+          margin-right: 260px;
+           width: 37px;
+         /* opacity: 0; */
+    }
+    }
+    /* welcome----end--- */
 
 }
 @media only screen and (min-width:390px) and 
@@ -3637,6 +4141,56 @@
   {
      font-size: 15px;
   }
+    /* welcome----start--- */
+    .welcomeshow img
+    {
+      visibility: visible;
+      z-index: 22;
+      animation: circleroot 1s ease-in-out 0.2s forwards ,
+    circlemotion .9s ease-in-out 1.2s forwards;
+    }
+    @keyframes circleroot
+    {
+      10%
+      {
+          transform: scale(1.2);
+        
+      }
+      50%
+      {
+          transform:  scale(1.5) rotatey(180deg);
+      }
+      70%
+      {
+          transform: scale(1);
+          
+      }
+    }
+        
+    @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -53.3pc;
+        margin-right: 255px;
+         width: 37px;
+       opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -53.3pc;
+        margin-right: 255px;
+        width: 37px;
+         opacity: 0;
+    }
+  }
+    /* welcome----end--- */
 }
 @media only screen and (max-width:361px)
 {
@@ -3778,4 +4332,54 @@
       font-size: 17px;
       width: 120%;
   }
+  /* welcome----start--- */
+  .welcomeshow img
+  {
+    visibility: visible;
+    z-index: 22;
+    animation: circleroot 1s ease-in-out 0.2s forwards ,
+    circlemotion .9s ease-in-out 1.2s forwards;
+  }
+  @keyframes circleroot
+  {
+    10%
+    {
+        transform: scale(1.2);
+      
+    }
+    50%
+    {
+        transform:  scale(1.5) rotatey(180deg);
+    }
+    70%
+    {
+        transform: scale(1);
+        
+    }
+  }
+  @keyframes circlemotion
+    {
+      0%
+      {
+        transform: scale(1) rotate(-360deg);
+      }
+      98%
+      {
+        margin-top: -54pc;
+        margin-right: 230px;
+         width: 37px;
+       opacity: 0.8;
+      
+  
+      }
+      100%
+      {
+        margin-top: -54pc;
+        margin-right: 230px;
+        width: 37px;
+         opacity: 0;
+    }
+    }
+ 
+  /* welcome----end--- */
 }
