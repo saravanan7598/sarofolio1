@@ -3,7 +3,6 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
-// import { RxCross1 } from "react-icons/rx";
 import { GiFiles } from "react-icons/gi";
 import { FaUserSecret } from "react-icons/fa";
 import { AiFillContacts } from "react-icons/ai";

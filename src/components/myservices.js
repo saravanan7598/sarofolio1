@@ -30,7 +30,7 @@ function Myservices() {
                             <div className='design2'style={{backgroundColor:"lightgreen"}}  ></div>
                                <img src={web}alt='' ></img>
                             <div className='text'>
-                                <h3>Web Development</h3>
+                                <h3>Web <span>Development</span></h3>
                                 <p>Bring your ideas to life with our custom web development solutions tailored to your specific business needs. Boost your online sales with our feature-rich e-commerce platform development services.</p>
                            </div>
 
@@ -44,8 +44,8 @@ function Myservices() {
      
                                <img src={webdesign}alt='' style={{borderBottom:" 5px solid skyblue"}} ></img>
                             <div className='text'>
-                                <h3>Web Design</h3>
-                                <p>Bring your ideas to life with our custom web development solutions tailored to your specific business needs. Boost your online sales with our feature-rich e-commerce platform development services.</p>
+                                <h3>Web <span >Design</span></h3>
+                                <p>Our team of experienced designers will work closely with you to understand your unique needs and craft a website that perfectly reflects your brand identity. We ensure your website looks great and functions flawlessly across all devices</p>
                            </div>
 
                       </div>
@@ -57,8 +57,8 @@ function Myservices() {
                             <div className='design2'  style={{backgroundColor:"lightpink"}}></div>
                                <img src={hack}alt=''  style={{borderBottom:" 5px solid pink"}} ></img>
                             <div className='text'>
-                                <h3>Hacking</h3>
-                                <p>Bring your ideas to life with our custom web development solutions tailored to your specific business needs. Boost your online sales with our feature-rich e-commerce platform development services.</p>
+                                <h3>Edi<span >ting</span></h3>
+                                <p>Polished writing makes a strong first impression and ensures your message is delivered effectively.  Editors can identify and fix issues quickly, allowing you to focus on other aspects of your project.</p>
                            </div>
 
                       </div>
