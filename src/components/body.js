@@ -2,7 +2,7 @@ import React from "react";
 import photo from "../images/photo.png";
 import photo1 from "../images/photo3.png";
 import icon1 from "../images/icon1.png";
-import resume from "../images/resume.jpg";
+import resume from "../images/Resume.pdf";
 import insta from "../images/insta.png";
 import facebook from "../images/facebook.png";
 import linkedin from "../images/linkedin.png";
