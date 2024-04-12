@@ -3,7 +3,7 @@ import React,{useEffect} from 'react'
 import { FaArrowUpLong } from "react-icons/fa6";
 import Header2 from './Header2';
 import Fooder from '../components/fooder';
-import resume from '../images/resume.jpg'
+import resume from '../images/Resume.pdf'
 import { MdOutlineDownloading } from "react-icons/md";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
