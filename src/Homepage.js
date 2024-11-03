@@ -8,10 +8,7 @@ import Sider from './components/Sider';
 import What from './components/what ';
 import Header2 from './Routes-components/Header2';
 import React, { useEffect, useState } from 'react'
-import circlelogo from './images/logo.jpg'
-// import { IoMenu } from "react-icons/io5";
-// import video from './images/video3.mp4'
-// import video2 from './images/video4.mp4'
+import circlelogo from './images/logos1.jpg'
 
 
 
@@ -40,7 +37,7 @@ var show = () =>
                             <p className='p'>Saravanan - View My PortFolio-</p>
                         </div>
                   </div>
-                   <img src={circlelogo} alt='' onClick={show} ></img>
+                   <img src={circlelogo} alt='' onClick={show}></img>
                    <button onClick={show}>View my PortFolio</button>
           </div>
 

@@ -1,6 +1,8 @@
 import React from "react";
-import photo from "../images/photo.png";
-import photo1 from "../images/photo3.png";
+import photo from "../images/newphoto1.png";
+// import photo from "../images/photo.png";
+import photo1 from "../images/newphoto2.png";
+// import photo1 from "../images/photo3.png";
 import icon1 from "../images/icon1.png";
 import resume from "../images/Resume.pdf";
 import insta from "../images/insta.png";

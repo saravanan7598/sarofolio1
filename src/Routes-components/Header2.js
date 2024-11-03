@@ -9,7 +9,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiFillHome } from "react-icons/ai";
-import circlelogo from '../images/logo.jpg'
+import circlelogo from '../images/logos1.jpg'
 import { ImCross } from "react-icons/im";
 
 
@@ -32,7 +32,6 @@ function Header2()
   var MenuOpen = ()=>
   {
     SetMenumobile(!menumobile)
-      
   }
   var submenu =() =>
   {

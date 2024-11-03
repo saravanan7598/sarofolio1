@@ -10,7 +10,7 @@ var show = () =>
 }
   return (
       <div>
-           <div className={showed ? 'welcome welcomeshow homepage' : 'welcome'}>
+           <div className={showed ? 'welcome welcomeshow' : 'welcome'}>
                <h1>Welcome to my Profolio</h1>
                <img src={circlelogo} alt=''></img>
                <button onClick={show}>Click Here</button>
@@ -19,4 +19,4 @@ var show = () =>
   )
 }
 
-export default Welcome
+export default Welcome;

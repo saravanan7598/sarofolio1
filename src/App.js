@@ -1,5 +1,4 @@
 import './App.css';
-
 import { BrowserRouter ,Routes , Route} from 'react-router-dom'
 import Homepage from './Homepage';
 import Contact from './Routes-components/Contact.js'
@@ -10,7 +9,7 @@ import Technicalskills from './Routes-components/Technicalskills.js';
 function App() {
   return (
     <div >
-       
+  
       <BrowserRouter> 
            <Routes>
                   <Route  path='/' element={<Homepage/>} />
